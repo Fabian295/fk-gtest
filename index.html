@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles.css">
+  <title>FK Creations-developer and programmer</title>
+</head>
+👀⭐️😎👀
+<body>
+  <header>
+    <!-- Write your name below -->
+    <h2>
+      <img src="./images/favicon-FK-100.png" width="40px" alt="">
+      FK Creations<span>©</span>
+     </h2>
+     <p class="profile">by<br />
+        👨🏽‍💼 &nbsp; &nbsp; Fabian Kahai <br />
+        ✉️ &nbsp; &nbsp; fabian.k@ziggo.nl <br />
+        📲 &nbsp; &nbsp; 06 43 19 53 49
+      </p>
+    <nav class="social-nav"> 
+      <ul>
+        <li>
+          <a href="https://twitter.com/FKCreations" target="_blank" class="sn-twitter"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/fabiankanhai6" target="_blank" class="sn-instagram"></a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="sn-website"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- About You -->
+  <main>
+    <section class="about">
+      <h1>My Profile</h1>
+      <p>
+        <p>TEKST AANPASSING</p>
+        Hi, I am Fabian. I'm a developer / programmer from the Netherlands.I love everything about programming, but often I find my  self writing front-end code in javascript. 
+        Sometimes in just plain Vanilla Java Script and sometimes with one of the JS Frameworks. 
+        FK Creations is the handle that I use when I'm writing code. 
+      </p>
+    </section>
+    <!-- Your Projects -->
+    <section class="projects">
+      <h1>My Projects</h1>
+      <a href="#" target="_blank" class="project">
+        <p class="output"></p>
+        <h5>My Project Number 1</h5>
+      </a>
+      <a href="#" target="_blank" class="project">
+        <p class="output2"></p>
+        <h5>My Project Number 2</h5>
+      </a>
+      <a href="#" target="_blank" class="project">
+        <h5>My Project Number 3</h5>
+      </a>
+      <a href="#" target="_blank" class="project">
+        <h5>My Project Number 3</h5>
+      </a>
+    </section>
+    </section>
+  </main>
+  <script>
+    let key = ['john', 'Bob', 'Marks'];
+    let curData = [
+     'today is 24deg celsius',
+     'Amsterdaam' 
+    ];
+    sessionStorage.setItem('myKey', key);
+    localStorage.setItem('weather', curData);
+    let output = document.querySelector('.output');
+    let output2 = document.querySelector('.output2');
+    let project = document.querySelector('.project');
+    let project2 = document.querySelector('.project2');
+    let weather = localStorage.weather;
+    let mKey = sessionStorage.myKey;
+    output.innerText = mKey;
+    output2.innerText = weather;
+    project.append(output);
+    project2.append(output2);
+  </script>
+</body>
+
+</html>
